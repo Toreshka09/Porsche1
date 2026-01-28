@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Porsche — Dark Glass</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav glass">
+    <div class="brand">
+      <div class="brand-badge"></div>
+      <div>Porsche Studio</div>
+    </div>
+
+    <nav class="menu">
+      <a class="active" href="index.html">Home</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="details.html">Details</a>
+    </nav>
+  </header>
+
+  <div id="transition"><div class="veil"></div></div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-left glass fade-in">
+          <div class="kicker">Dark Glassmorphism • Minimal Luxury</div>
+          <div class="h1">Porsche — скорость, которая выглядит тихо.</div>
+          <p class="sub">
+            Премиальный минимализм: стекло, свет, воздух. Выбирай модель —
+            и открой подробности как в дорогом конфигураторе.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn primary" id="toCatalog">Смотреть каталог ↓</button>
+            <a class="btn ghost" href="catalog.html">Перейти на страницу каталога</a>
+          </div>
+        </div>
+
+        <div class="hero-right glass fade-in">
+          <div class="car-frame">
+            <img src="IMG_9885 2.jpg" alt="Porsche car">
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <b>Precision</b>
+              <span>Собранность в каждом движении</span>
+            </div>
+            <div class="stat">
+              <b>Design</b>
+              <span>Линии, которые узнают издалека</span>
+            </div>
+            <div class="stat">
+              <b>Emotion</b>
+              <span>Звук, свет, ощущение класса</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="scrollHint" style="margin-top:18px; color:rgba(255,255,255,.55); font-size:12px; letter-spacing:.18em; text-transform:uppercase;">
+        Scroll to catalog preview
+      </div>
+    </section>
+
+    <section class="section" id="catalogAnchor">
+      <div class="container">
+        <div class="section-title">
+          <h2>Каталог (превью)</h2>
+          <p>Быстрый просмотр. Для полного каталога — открой отдельную страницу.</p>
+        </div>
+
+        <div class="glass" style="padding:14px;">
+          <div class="catalog">
+            <div class="card fade-in" onclick="window.location.href='catalog.html'">
+              <img src="Photoroom_20260123_202719.PNG" alt="911">
+              <h3>911 Carrera</h3>
+              <div class="meta">
+                <span class="tag">ICON</span>
+                <span class="price">от 78 900 000 ₸</span>
+              </div>
+            </div>
+
+            <div class="card fade-in" onclick="window.location.href='catalog.html'">
+              <img src="Photoroom_20260123_202737.PNG" alt="Taycan">
+              <h3>Taycan</h3>
+              <div class="meta">
+                <span class="tag">ELECTRIC</span>
+                <span class="price">от 64 500 000 ₸</span>
+              </div>
+            </div>
+
+            <div class="card fade-in" onclick="window.location.href='catalog.html'">
+              <img src="Photoroom_20260123_202754.PNG" alt="Cayenne">
+              <h3>Cayenne</h3>
+              <div class="meta">
+                <span class="tag">SUV</span>
+                <span class="price">от 58 300 000 ₸</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; margin-top:12px;">
+            <div style="color:rgba(255,255,255,.65); font-size:13px;">
+              Нажми на любую карточку — и перейдёшь к каталогу.
+            </div>
+            <a class="btn primary" href="catalog.html">Открыть Catalog →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container glass conclusion fade-in">
+        <div class="hr"></div>
+        <p>
+          Porsche — это не про “громко”. Это про точность, вкус и уважение к форме.
+          Твой сайт уже выглядит как премиум-лендинг: дальше можешь добавить больше моделей,
+          видео-фоны, или кнопку “Request a test drive”.
+        </p>
+        <div class="hr"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

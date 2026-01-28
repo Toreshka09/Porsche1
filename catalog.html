@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Porsche — Catalog</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav glass">
+    <div class="brand">
+      <div class="brand-badge"></div>
+      <div>Porsche Studio</div>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a class="active" href="catalog.html">Catalog</a>
+      <a href="details.html">Details</a>
+    </nav>
+  </header>
+
+  <div id="transition"><div class="veil"></div></div>
+
+  <main class="page">
+    <section class="section" style="padding-top:24px;">
+      <div class="container">
+        <div class="section-title">
+          <h2>Каталог</h2>
+          <p>Выбери модель — откроется страница с подробностями.</p>
+        </div>
+
+        <div class="glass" style="padding:14px;">
+          <div id="catalogGrid" class="catalog"></div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; margin-top:12px;">
+            <a class="btn ghost" href="index.html">← Назад на Home</a>
+            <div style="color:rgba(255,255,255,.55); font-size:13px;">
+              Подсказка: ты можешь поменять картинки прямо в app.js (массив cars).
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
